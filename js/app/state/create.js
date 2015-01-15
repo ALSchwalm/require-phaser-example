@@ -1,5 +1,5 @@
-define(function(){
+define(["app/player"], function(player){
     return function(game){
-        var player = game.add.sprite(400, 500, 'ship');
+        player.sprite = game.add.sprite(400, 500, 'ship');
     };
 });
